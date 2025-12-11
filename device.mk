@@ -60,23 +60,23 @@ PRODUCT_PACKAGES += \
     MiPadParts
 
 PRODUCT_PACKAGES += \
-    vendor.xiaomi_elish.peripherals@1.0-service.default
+    vendor.xiaomi_enuma.peripherals@1.0-service.default
 
-$(call soong_config_set, xiaomi_elish_peripherals, stylus_use_old_driver, true)
+$(call soong_config_set, xiaomi_enuma_peripherals, stylus_use_old_driver, true)
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.elish.rc
+    init.enuma.rc
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    ApertureOverlayElish \
-    FrameworkResOverlayElish \
-    LineageSDKOverlayElish \
+    ApertureOverlayEnuma \
+    FrameworkResOverlayEnuma \
+    LineageSDKOverlayEnuma \
     NetworkStackOverlayMIUI \
-    SettingsOverlayElish \
-    SettingsProviderOverlayElish \
-    SystemUIOverlayElish
+    SettingsOverlayEnuma \
+    SettingsProviderOverlayEnuma \
+    SystemUIOverlayEnuma
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -90,4 +90,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/elish/elish-vendor.mk)
+$(call inherit-product, vendor/xiaomi/enuma/enuma-vendor.mk)

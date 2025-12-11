@@ -6,8 +6,8 @@ using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 using android::sp;
 
-using vendor::xiaomi_elish::peripherals::V1_0::IPeripherals;
-using vendor::xiaomi_elish::peripherals::V1_0::implementation::Peripherals;
+using vendor::xiaomi_enuma::peripherals::V1_0::IPeripherals;
+using vendor::xiaomi_enuma::peripherals::V1_0::implementation::Peripherals;
 
 int main() {
     sp<IPeripherals> service = new Peripherals();

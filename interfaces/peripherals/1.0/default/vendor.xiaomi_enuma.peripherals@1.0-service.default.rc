@@ -6,7 +6,7 @@ on boot
     # Xiaomi Keyboard
     chown system system /sys/bus/platform/drivers/xiaomi-keyboard/soc:xiaomi_keyboard/xiaomi_keyboard_conn_status
 
-service vendor.elish-peripherals-hal-1-0 /vendor/bin/hw/vendor.xiaomi_elish.peripherals@1.0-service.default
+service vendor.enuma-peripherals-hal-1-0 /vendor/bin/hw/vendor.xiaomi_enuma.peripherals@1.0-service.default
     class main
     user system
     group system

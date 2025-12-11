@@ -13,11 +13,11 @@ $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 PRODUCT_CHARACTERISTICS := tablet
 
-# Inherit from elish device
-$(call inherit-product, device/xiaomi/elish/device.mk)
+# Inherit from enuma device
+$(call inherit-product, device/xiaomi/enuma/device.mk)
 
-PRODUCT_NAME := lineage_elish
-PRODUCT_DEVICE := elish
+PRODUCT_NAME := lineage_enuma
+PRODUCT_DEVICE := enuma
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2105K81AC
@@ -27,4 +27,4 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := Xiaomi/elish/elish:13/RKQ1.211001.001/V816.0.2.0.TKYCNXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/enuma/enuma:13/RKQ1.211001.001/V816.0.2.0.TKYCNXM:user/release-keys

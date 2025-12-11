@@ -46,9 +46,9 @@ vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 
 # Audio-Hardware
-vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.elish.so;FIX_SONAME
+vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.enuma.so;FIX_SONAME
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_elish.so;FIX_SONAME
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_enuma.so;FIX_SONAME
 vendor/lib/vndk/libxlog.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudiocloudctrl.so
@@ -106,23 +106,27 @@ vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 # vendor/lib64/libSuperSensorCPU.so
 # vendor/lib64/libxmi_hdr_checker.so
 # vendor/lib64/libxmi_high_dynamic_range.so
-vendor/lib64/camera/com.qti.actuator.elish_cn3927_ov13b10.so
-vendor/lib64/camera/com.qti.eeprom.elish_aac_ov8856_p24c64f.so
-vendor/lib64/camera/com.qti.eeprom.elish_ofilm_ov13b10_bl24sa64.so
-vendor/lib64/camera/com.qti.eeprom.elish_qtech_hi556.so
+vendor/lib64/camera/com.qti.actuator.enuma_gt9764_ov50c40.so
+vendor/lib64/camera/com.qti.eeprom.enuma_aac_ov8856_p24c64f.so
+vendor/lib64/camera/com.qti.eeprom.enuma_qtech_ov48d40_bl24sa64.so
+vendor/lib64/camera/com.qti.eeprom.enuma_qtech_ov50c40_bl24sa64.so
+vendor/lib64/camera/com.qti.eeprom.enuma_qtech_hi556.so
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib64/camera/com.qti.eeprom.umi_sunny_s5k5e8yx_depth.so
-vendor/lib64/camera/com.qti.sensor.elish_hi556.so
-vendor/lib64/camera/com.qti.sensor.elish_ov13b10.so
-vendor/lib64/camera/com.qti.sensor.elish_ov8856.so
+vendor/lib64/camera/com.qti.sensor.enuma_hi556.so
+vendor/lib64/camera/com.qti.sensor.enuma_ov48d40.so
+vendor/lib64/camera/com.qti.sensor.enuma_ov50c40.so
+vendor/lib64/camera/com.qti.sensor.enuma_ov8856.so
 vendor/lib64/camera/com.qti.sensor.imx563.so
-vendor/lib64/camera/com.qti.sensormodule.elish_aac_ov8856.bin
-vendor/lib64/camera/com.qti.sensormodule.elish_ofilm_ov13b10.bin
-vendor/lib64/camera/com.qti.sensormodule.elish_qtech_hi556.bin
+vendor/lib64/camera/com.qti.sensormodule.enuma_aac_ov8856.bin
+vendor/lib64/camera/com.qti.sensormodule.enuma_qtech_ov48d40.bin
+vendor/lib64/camera/com.qti.sensormodule.enuma_qtech_ov50c40.bin
+vendor/lib64/camera/com.qti.sensormodule.enuma_qtech_hi556.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.elish_aac_ov8856_front.bin
-vendor/lib64/camera/com.qti.tuned.elish_ofilm_ov13b10_wide.bin
-vendor/lib64/camera/com.qti.tuned.elish_qtech_hi556_depth.bin
+vendor/lib64/camera/com.qti.tuned.enuma_aac_ov8856_front.bin
+vendor/lib64/camera/com.qti.tuned.enuma_qtech_ov48d40_wide.bin
+vendor/lib64/camera/com.qti.tuned.enuma_qtech_ov50c40_wide.bin
+vendor/lib64/camera/com.qti.tuned.enuma_qtech_hi556_depth.bin
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -162,6 +166,9 @@ vendor/lib64/libcamera_dirty.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamerapostproc.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2svarnn.so
+vendor/lib64/libcapiv2vop.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvface_api.so
@@ -189,7 +196,7 @@ vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgo_video_colourkeeping.so
 vendor/lib64/libmialgo_video_enhance.so
 vendor/lib64/libmialgo_video_seg.so
-vendor/lib64/libmialgoengine.so
+vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
 vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_855.so
 vendor/lib64/libmpbase.so

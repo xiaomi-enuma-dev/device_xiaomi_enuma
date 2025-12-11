@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageSDKOverlayElish",
+    name: "LineageSDKOverlayEnuma",
     product_specific: true
 }

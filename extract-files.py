@@ -21,11 +21,11 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.*seclabel u:r:batterysecret:s0\n', ''),
     'vendor/lib/libaudioroute_ext.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
-    'vendor/lib/hw/audio.primary.elish.so': blob_fixup()
+    'vendor/lib/hw/audio.primary.enuma.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so')
         .binary_regex_replace(
             b'/vendor/lib/liba2dpoffload.so',
-            b'liba2dpoffload_elish.so\x00\x00\x00\x00\x00\x00',
+            b'liba2dpoffload_enuma.so\x00\x00\x00\x00\x00\x00',
         ),
     'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
@@ -42,7 +42,7 @@ namespace_imports = [
 ]
 
 module = ExtractUtilsModule(
-    'elish',
+    'enuma',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
