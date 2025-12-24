@@ -32,15 +32,18 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Fingerprint
 TARGET_SUPPORTS_FINGERPRINT := true
 
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
+
+# ForceRotation
+PRODUCT_PACKAGES += \
+    ForceRotation
 
 # GNSS
 PRODUCT_PACKAGES += \
