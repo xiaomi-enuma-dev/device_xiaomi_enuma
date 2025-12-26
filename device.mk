@@ -32,9 +32,6 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # Fingerprint
 TARGET_SUPPORTS_FINGERPRINT := true
 

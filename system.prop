@@ -1,1 +1,5 @@
-ro.paranoid.maintainer=Xiliahz❤_(心凉患者)
+ro.paranoid.maintainer= Xiliahz❤_(心凉患者)
+
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=2

@@ -22,6 +22,7 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/elish.config
 TARGET_OTA_ASSERT_DEVICE := elish
 
 # Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
