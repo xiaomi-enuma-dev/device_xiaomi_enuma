@@ -55,7 +55,7 @@ vendor.audio.offload.buffer.size.kb=32
 vendor.audio_hal.period_multiplier=3
 
 # Audio hardware
-ro.hardware.audio.primary=elish
+ro.hardware.audio.primary=enuma
 
 # Display
 ro.surface_flinger.set_idle_timer_ms=4000

@@ -2,7 +2,7 @@
 /dev/xiaomi-touch                                                       u:object_r:touchfeature_device:s0
 
 # Peripherals
-/vendor/bin/hw/vendor\.xiaomi_elish\.peripherals@1\.0-service\.default  u:object_r:hal_peripherals_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi_enuma\.peripherals@1\.0-service\.default  u:object_r:hal_peripherals_default_exec:s0
 
 # GNSS
 /data/vendor/airoha(/.*)?                                               u:object_r:airoha_data_file:s0

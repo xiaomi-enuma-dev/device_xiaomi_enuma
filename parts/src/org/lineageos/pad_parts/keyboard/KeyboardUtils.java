@@ -25,7 +25,7 @@ import android.util.Log;
 
 import org.lineageos.pad_parts.utils.SettingsUtils;
 
-import vendor.xiaomi_elish.peripherals.V1_0.IPeripherals;
+import vendor.xiaomi_enuma.peripherals.V1_0.IPeripherals;
 
 public class KeyboardUtils {
 
