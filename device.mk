@@ -13,6 +13,9 @@ TARGET_IS_TABLET := false
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
+# Inherit from Lindroid
+$(call inherit-product, vendor/lindroid/lindroid.mk)
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
