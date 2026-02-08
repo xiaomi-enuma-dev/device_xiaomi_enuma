@@ -8,13 +8,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_tablet.mk)
 
 # Inherit from enuma device
 $(call inherit-product, device/xiaomi/enuma/device.mk)
 
-PRODUCT_NAME := lineage_enuma
+PRODUCT_NAME := yaap_enuma
 PRODUCT_DEVICE := enuma
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
@@ -30,17 +30,8 @@ TARGET_ENABLE_BLUR := true
 # EPPE
 TARGET_DISABLE_EPPE := true
 
-# AXION
-AXION_CAMERA_REAR_INFO := 13,5MP
-AXION_CAMERA_FRONT_INFO := 8
-AXION_MAINTAINER := Xiliahz❤_(心凉患者)
-AXION_PROCESSOR := Snapdragon 870
-PERF_GOV_SUPPORTED := true
-PERF_DEFAULT_GOV := schedutil
-PERF_ANIM_OVERRIDE := true
-
 TARGET_INCLUDES_LOS_PREBUILTS := true
-WITH_GMS := true
+WITH_GMS := false
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_PREBUILT_BCR := false
 TARGET_SUPPORTS_QUICK_TAP := false
