@@ -43,7 +43,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
     public KeyHandler(Context context) {
         mContentResolver = context.getContentResolver();
-        mInputManager = InputManager.getInstance();
+        mInputManager = (InputManager) context.getSystemService(Context.INPUT_SERVICE);
 
         // Enable button settings activity
         ButtonUtils.enableButtonSettingsActivity(context);
